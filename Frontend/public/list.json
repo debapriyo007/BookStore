@@ -1,0 +1,83 @@
+[
+    {
+      "id":1,
+      "name": "The Rye",
+      "title": "orum numquam obcaecati, quis omnis inventore molestias magnam exercitationem unde repellat!",
+      "price":10,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":2,
+      "name": "Hans Christian Andersen",
+      "title": "orum numquam obcaecati, quis omnis inventore molestias magnam exercitationem unde repellat!",
+      "price":110,
+      "category": "Fairy tales",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":3,
+      "name": "The Divine Comedy",
+      "title": "orum numquam obcaecati, quis omnis inventore molestias magnam exercitationem unde repellat!",
+      "price":500,
+      "category": "Comedy",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":4,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":5,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":6,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":7,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":8,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":9,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id":10,
+      "name": "The Rye",
+      "title": "Things Fall Apart",
+      "price":0,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/7108sdEUEGL._AC_UF1000,1000_QL80_.jpg"
+    }
+    
+  ]
