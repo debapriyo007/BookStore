@@ -62,6 +62,30 @@
       "price":110,
       "category": "Drama",
       "image":"https://m.media-amazon.com/images/I/91hzcTMy3GL._SY522_.jpg"
+    },
+    {
+      "id":9,
+      "name": "Catcher Rye",
+      "title": "orum numquam obcaecati, quis omnis inventore molestias magnam exercitationem unde repellat!",
+      "price":70,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/91hzcTMy3GL._SY522_.jpg"
+    },
+    {
+      "id":10,
+      "name": "Catcher Rye",
+      "title": "orum numquam obcaecati, quis omnis inventore molestias magnam exercitationem unde repellat!",
+      "price":999,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/91hzcTMy3GL._SY522_.jpg"
+    },
+    {
+      "id":11,
+      "name": "Catcher Rye",
+      "title": "orum numquam obcaecati, quis omnis inventore molestias magnam exercitationem unde repellat!",
+      "price":550,
+      "category": "Drama",
+      "image":"https://m.media-amazon.com/images/I/91hzcTMy3GL._SY522_.jpg"
     }
     
   ]
