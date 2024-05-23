@@ -3,13 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ListData from "../../public/list.json";
+import Cards from "./Cards";
 const FreeBoook = () => {
   const freeBooks = ListData.filter((items) => items.price === 0);
   var settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
@@ -39,7 +40,7 @@ const FreeBoook = () => {
       },
     ],
   };
-  console.log(freeBooks);
+  // console.log(freeBooks);
   return (
     <>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
@@ -58,30 +59,10 @@ const FreeBoook = () => {
 
         <div>
           <Slider {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-            <div>
-              <h3>7</h3>
-            </div>
-            <div>
-              <h3>8</h3>
-            </div>
+            {freeBooks.map((items)=>(
+              <Cards key={items.id} item={items}/>
+            
+            ))}
           </Slider>
         </div>
       </div>

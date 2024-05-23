@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+
 
 const Navbar = () => {
     const [sticky, Setsticky] = useState(false)
@@ -19,10 +22,10 @@ const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <a>Home</a>
+        <Link to={'/'}> <a>Home</a></Link>
       </li>
       <li>
-        <a>Course</a>
+        <Link to={'/course'}> <a>Courses</a></Link>
       </li>
       <li>
         <a>Contact</a>
@@ -34,7 +37,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 ${
+      <div className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${
         sticky ? "sticky-navbar shadow-md bg-base-100 duration-300 transition-all ease-in-out":""
       }`}>
         <div className="navbar">
@@ -67,7 +70,7 @@ const Navbar = () => {
                 {navItems}
               </ul>
             </div>
-            <a className="text-2xl font-bold cursor-pointer">Book Store</a>
+            <Link to={'/'}> <a className="text-xl md:text-2xl font-bold cursor-pointer">Book Store</a></Link>
           </div>
 
           <div className="navbar-end space-x-3">

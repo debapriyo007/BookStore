@@ -8,3 +8,30 @@
 body{
   font-family: "Poppins", sans-serif;
 }
+
+
+
+/* This is for experiment purpose */
+.ball{
+  /* height: 59px;
+  width: 59px; */
+  position: absolute;
+  
+  /* animation: animateX 7s infinite normal,
+  animateY 1s infinite alternate ease-out; my animation*/
+  animation:animateY 1s ease-out infinite alternate;
+}
+
+@keyframes animateY {
+ from{
+      bottom: 5%;
+  }
+  to{
+      bottom: 10% ;
+  }
+}
+.imgcontainer{
+  height: px;
+  width: px;
+  position: relative;
+}
