@@ -1,10 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form"
+import axios from "axios"
+import toast from "react-hot-toast";
 
 const SignUp = () => {
-
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || "/";
     const {
         register,
         handleSubmit,
@@ -12,7 +16,29 @@ const SignUp = () => {
         formState: { errors },
      } = useForm()
     
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = async (data) => {
+      const userInfo = {
+        name: data.name,
+        email: data.email,
+        password: data.password,
+      }
+      await axios.post('http://localhost:8000/v1/user/signup', userInfo)
+      .then((res)=>{
+        console.log(res.data)
+        if(res.data){
+          toast.success('SignUp Successfully');
+          navigate(from, {replace:true})
+        }
+        localStorage.setItem("Users", JSON.stringify(res.data))
+      })
+      .catch((err)=>{
+        if(err.response){
+          console.log(err)
+          toast.error(`${err.response.data.message}`);
+          // alert(`ERROR: ${err.response.data.message}`)
+}
+      })
+    }
 
   return (
     <div className="flex h-screen justify-center items-center">
@@ -72,7 +98,7 @@ const SignUp = () => {
           </div>
           <p className=" text-center mt-4 text-sm">
             Have account ?{" "}
-            <button to="/" className="underline cursor-pointer text-blue-500"
+            <button className="underline cursor-pointer text-blue-500"
             onClick={()=>
                 document.getElementById('my_modal_3').showModal()
             }

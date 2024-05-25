@@ -6,7 +6,7 @@ Update everything later.
  - Freepick : https://www.freepik.com/
  - React-Slick : https://react-slick.neostack.com/
  - React Hook-Form : https://react-hook-form.com/
- - React Tostify : https://www.npmjs.com/package/react-toastify
+ - React-Hot-Tost : https://react-hot-toast.com/
  - Demo Data: https://github.com/benoitvallon/100-best-books/blob/master/books.json
  - Google Fonts: https://fonts.google.com/
  
