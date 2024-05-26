@@ -29,7 +29,7 @@ const Login = () => {
           setTimeout(()=>{
              window.location.reload()
             localStorage.setItem('Users', JSON.stringify(res.data))
-          },3000)
+          },2000)
         }
         localStorage.setItem("Users", JSON.stringify(res.data))
       })

@@ -15,10 +15,10 @@ function Logout() {
 
       setTimeout(() => {
         window.location.reload();
-      }, 3000);
+      }, 2000);
     } catch (error) {
       toast.error("Error: " + error);
-      setTimeout(() => {}, 2000);
+      setTimeout(() => {}, 3000);
     }
   };
   return (

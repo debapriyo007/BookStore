@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
 import { useAuth } from "../context/AuthProvider";
-import Logout from "./LogOut";
+import Logout from "./Logout";
 
 
 

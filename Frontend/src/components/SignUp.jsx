@@ -43,7 +43,7 @@ const SignUp = () => {
   return (
     <div className="flex h-screen justify-center items-center">
       <div  className="w-[600px]">
-        <div className="modal-box mx-4 dark:bg-slate-800 md:m-7 p-5 ">
+        <div className="modal-box mx-4 dark:bg-slate-800 md:m-7 p-6 ">
           <form onSubmit={handleSubmit(onSubmit)}  method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <Link to= '/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
