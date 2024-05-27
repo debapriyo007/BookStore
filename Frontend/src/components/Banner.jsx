@@ -4,7 +4,7 @@ import bannerImg from '/Banner3.png'
 const Banner = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 py-10 px-4 flex flex-col md:flex-row mt-10 md:mb-5">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 py-10 px-4 flex flex-col md:flex-row mt-16 md:mb-8">
         <div className="w-full md:w-1/2 mt-12 md:mt-32 order-2 md:order-1">
           <div className="space-y-12 mt-3">
             <h1 className="text-4xl font-bold">
