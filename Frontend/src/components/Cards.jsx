@@ -15,7 +15,7 @@ const Cards = ({item}) => {
           <div className="card-body">
             <h2 className="card-title">
               {item.name}
-              <div className="badge badge-secondary">NEW</div>
+              <div className="badge bg-[#407BFF] text-white border border-black">NEW</div>
             </h2>
             <p>If a dog chews shoes whose shoes does he choose?</p>
             <div className="card-actions justify-center flex-col items-center">

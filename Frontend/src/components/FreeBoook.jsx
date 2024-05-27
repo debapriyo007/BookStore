@@ -67,7 +67,7 @@ const FreeBoook = () => {
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold text-center ">
-            Offer <span className="text-pink-500">Free Books .</span>
+            Offer <span className="text-[#407BFF]">Free Books .</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora

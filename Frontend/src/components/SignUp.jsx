@@ -26,7 +26,7 @@ const SignUp = () => {
       .then((res)=>{
         console.log(res.data)
         if(res.data){
-          toast.success('SignUp Successfully');
+          toast.success('User created Successfully!');
           navigate(from, {replace:true})
         }
         localStorage.setItem("Users", JSON.stringify(res.data))
@@ -43,7 +43,7 @@ const SignUp = () => {
   return (
     <div className="flex h-screen justify-center items-center">
       <div  className="w-[600px]">
-        <div className="modal-box mx-4 dark:bg-slate-800 md:m-7 p-6 ">
+        <div className="modal-box mx-4 dark:bg-slate-800 md:px-12 md:py-20 md:m-7 ">
           <form onSubmit={handleSubmit(onSubmit)}  method="dialog">
             {/* if there is a button in form, it will close the modal */}
             <Link to= '/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
@@ -58,7 +58,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Enter your Name"
-              className="px-5 py-2 w-full border border-black outline-none rounded-md
+              className="px-5 py-3 w-full border border-black outline-none rounded-md
               dark:bg-slate-500 dark:text-white dark:placeholder:text-white font-normal
               "
               {...register("name", { required: true })}
@@ -72,7 +72,7 @@ const SignUp = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-5 py-2 w-full border border-black outline-none rounded-md
+              className="px-5 py-3 w-full border border-black outline-none rounded-md
               dark:bg-slate-500 dark:text-white dark:placeholder:text-white font-normal"
               {...register("email", { required: true })}
             />
@@ -84,7 +84,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Enter your password"
-              className="px-5 py-2 w-full border border-black outline-none rounded-md
+              className="px-5 py-3 w-full border border-black outline-none rounded-md
               dark:bg-slate-500 dark:text-white dark:placeholder:text-white font-normal"
               {...register("password", { required: true })}
             
@@ -92,23 +92,22 @@ const SignUp = () => {
             {errors.email && <span className="text-sm text-red-500">This field is required!</span>}
           </div>
           <div className="flex justify-center">
-            <button className="btn btn-secondary mt-6 px-8 text-sm">
+            <button className="btn bg-[#407BFF] text-white hover:bg-[#6495fe] mt-6 px-8 text-sm">
               SignUp
             </button>
           </div>
           <p className=" text-center mt-4 text-sm">
             Have account ?{" "}
-            <button className="underline cursor-pointer text-blue-500"
-            onClick={()=>
-                document.getElementById('my_modal_3').showModal()
-            }
+            <Link to= '/' className="underline cursor-pointer text-blue-500"
+            
+            
             >
               {" "}
               Login
-            </button>
+            </Link>
             
           </p>
-          <Login/>
+          {/* <Login/> */}
           </form>
         </div>
         

@@ -1,15 +1,15 @@
 import React from "react";
-import bannerImg from '/Bannar.png'
+import bannerImg from '/Banner3.png'
 
 const Banner = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 py-5 px-4 flex flex-col md:flex-row mt-10 md:mb-40">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 py-10 px-4 flex flex-col md:flex-row mt-10 md:mb-5">
         <div className="w-full md:w-1/2 mt-12 md:mt-32 order-2 md:order-1">
-          <div className="space-y-12">
+          <div className="space-y-12 mt-3">
             <h1 className="text-4xl font-bold">
               Hello, Wellcomes here to learn something{" "}
-              <span className="text-pink-500">new everyday!!!</span>
+              <span className="text-[#407BFF]">new everyday!!!</span>
             </h1>
             <p className="text-xl">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -29,10 +29,10 @@ const Banner = () => {
             <input type="text" className="grow" placeholder="Email" />
           </label>
           </div>
-          <button className="btn btn-secondary mt-6">Explore More</button>
+          <button className="btn bg-[#407BFF] text-white mt-6 hover:bg-[#6495fe]">Explore More</button>
           </div>
         <div className="w-full md:w-1/2 order-1">
-            <img src={bannerImg} className="w-92 h-92" alt="Banner_of_BookStore" />
+            <img  src={bannerImg} className="md:mx-10  w-92 h-92" alt="Banner_of_BookStore" />
         </div>
       </div>
     </>

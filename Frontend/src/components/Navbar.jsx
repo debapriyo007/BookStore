@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Login from "./Login";
 import { useAuth } from "../context/AuthProvider";
 import Logout from "./Logout";
+import SignUp from './SignUp'
 
 
 
@@ -102,7 +103,7 @@ const Navbar = () => {
                 {navItems}
               </ul>
             </div>
-            <Link to={'/'}> <a className="text-xl md:text-2xl font-bold cursor-pointer">Book Store</a></Link>
+            <Link to={'/'}> <a className="text-xl md:text-2xl font-bold cursor-pointer"><span className="">Book</span> Store.</a></Link>
           </div>
 
           <div className="navbar-end space-x-3">

@@ -74,7 +74,7 @@ const Login = () => {
                   {errors.password  && <span className="text-sm text-red-500">This field is required!</span>}
             </div>
            <div className="flex justify-center">
-             <button className="btn btn-secondary mt-6 px-8 text-sm">Login</button>
+             <button className="btn bg-[#407BFF] text-white hover:bg-[#6495fe] mt-6 px-8 text-sm">Login</button>
             
             </div>
             <p className="text-center mt-4 text-sm">Not registerd ? 
