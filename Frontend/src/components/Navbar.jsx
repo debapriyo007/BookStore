@@ -61,7 +61,8 @@ const Navbar = () => {
         <Link to={'/course'}> <a>Courses</a></Link>
       </li>
       <li>
-        <a>Contact</a>
+       
+        <Link to={'/contact'}> <a>Contact</a></Link>
       </li>
       <li>
         <a>About Us</a>

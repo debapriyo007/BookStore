@@ -58,9 +58,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Enter your Name"
-              className="px-5 py-3 w-full border border-black outline-none rounded-md
-              dark:bg-slate-500 dark:text-white dark:placeholder:text-white font-normal
-              "
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               {...register("name", { required: true })}
             />
             {errors.email && <span className="text-sm text-red-500">This field is required!</span>}
@@ -72,8 +70,7 @@ const SignUp = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-5 py-3 w-full border border-black outline-none rounded-md
-              dark:bg-slate-500 dark:text-white dark:placeholder:text-white font-normal"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               {...register("email", { required: true })}
             />
             {errors.email && <span className="text-sm text-red-500">This field is required!</span>}
@@ -84,8 +81,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Enter your password"
-              className="px-5 py-3 w-full border border-black outline-none rounded-md
-              dark:bg-slate-500 dark:text-white dark:placeholder:text-white font-normal"
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
               {...register("password", { required: true })}
             
             />
