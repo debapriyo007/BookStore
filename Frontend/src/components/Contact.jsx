@@ -9,15 +9,15 @@ const Contact = () => {
           <div className="mx-auto max-w-7xl px-4 md:mt-10">
             {/* Hero Map */}
             <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
-              <div className="mx-auto max-w-max rounded-full border bg-gray-50 p-1 px-3">
-                <p className="text-center text-xs font-semibold leading-normal md:text-sm">
+              {/* <div className="mx-auto max-w-max rounded-full border bg-gray-50 p-1 px-3">
+                <p className="text-center text-xs font-semibold leading-normal md:text-sm dark: text-black">
                   Share your thoughts
                 </p>
-              </div>
-              <p className="text-center text-3xl font-bold text-gray-900 md:text-4xl md:leading-5">
+              </div> */}
+              <p className="text-center text-3xl font-bold text-gray-900 md:text-4xl md:leading-5 dark:text-white">
                 Love to hear <span className='text-[#407BFF]'>from you.</span>
               </p>
-              <p className="mx-auto max-w-4xl text-center text-base text-gray-600 md:text-md">
+              <p className="mx-auto max-w-4xl text-center text-base text-gray-600 md:text-md dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis voluptates
                 neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
               </p>
@@ -27,12 +27,12 @@ const Contact = () => {
                 {/* contact from */}
                 <div className="flex items-center justify-center">
                   <div className="px-2 md:px-12">
-                    <p className=" text-center text-2xl font-bold text-gray-900 md:text-3xl">Get <span className='text-[#407BFF]'>in touch.</span></p>
+                    <p className=" text-center text-2xl font-bold text-gray-900 md:text-4xl dark:text-white">Get <span className='text-[#407BFF]'>in touch.</span></p>
                     <form action="" className="mt-8 space-y-4">
                       <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                         <div className="grid w-full  items-center gap-1.5">
                           <label
-                            className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70 dark:text-gray-300"
                             htmlFor="first_name"
                           >
                             First Name
@@ -46,7 +46,7 @@ const Contact = () => {
                         </div>
                         <div className="grid w-full  items-center gap-1.5">
                           <label
-                            className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70 dark:text-gray-300"
                             htmlFor="last_name"
                           >
                             Last Name
@@ -61,7 +61,7 @@ const Contact = () => {
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
                         <label
-                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70 dark:text-gray-300"
                           htmlFor="email"
                         >
                           Email
@@ -75,7 +75,7 @@ const Contact = () => {
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
                         <label
-                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70 dark:text-gray-300"
                           htmlFor="phone_number"
                         >
                           Phone number
@@ -89,7 +89,7 @@ const Contact = () => {
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
                         <label
-                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                          className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70 dark:text-gray-300"
                           htmlFor="message"
                         >
                           Message
@@ -114,7 +114,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <hr className="mt-6" />
+         
          
         </div>
       )

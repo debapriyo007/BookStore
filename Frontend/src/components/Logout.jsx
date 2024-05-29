@@ -12,9 +12,10 @@ function Logout() {
       });
       localStorage.removeItem("Users");
       toast.success("Logout successfully");
-
+      
       setTimeout(() => {
         window.location.reload();
+        window.location.replace("/");
       }, 2000);
     } catch (error) {
       toast.error("Error: " + error);
