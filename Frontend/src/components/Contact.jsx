@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Contact = () => {
     return (
-        <div>
+        <div> 
           
          <Navbar/>
           <div className="mx-auto max-w-7xl px-4 md:mt-10">

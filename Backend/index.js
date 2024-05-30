@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import dbConnection from './config/db.js'
 import allBooksRoute from './routes/books.route.js'
 import userRouter from './routes/user.route.js'
+import contactInfo from './routes/contact.route.js'
 import cors from 'cors'
 
 
@@ -19,6 +20,7 @@ dbConnection() // call the data base
 //use all routers.
 app.use('/v1/books', allBooksRoute)
 app.use('/v1/user', userRouter)
+app.use('/v1/contactInfo', contactInfo) 
 
 
 
