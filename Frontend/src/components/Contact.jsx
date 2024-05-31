@@ -1,7 +1,49 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
+import toast from 'react-hot-toast'
+import { useLocation, useNavigate } from 'react-router-dom'
+
 
 const Contact = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    const from = location.state?.from?.pathname || "/"
+    const { register, handleSubmit, watch, formState: { errors } } = useForm()
+
+    const onSubmit = async(data)=>{
+      try {
+        const contactInfo = {
+          firstName: data.firstName, 
+          lastName: data.lastName,
+          email: data.email,
+          phoneNumber: data.phoneNumber,
+          message: data.message
+        }
+        await axios
+        .post('http://localhost:8000/v1/contactInfo', contactInfo)
+        .then((res)=>{
+          console.log(res.data)
+          if(res.data){
+            toast.success('Message Send Successfully!')
+            navigate(from, {replace:true})
+          }
+        })
+        .catch((err)=>{
+          if (err.response) {
+            console.log(err);
+            toast.error(`${err.response.data.message}`);
+            // alert(`ERROR: ${err.response.data.message}`)
+          }
+        })
+      } catch (error) {
+        
+        console.log(`There are somethig WRONG in onSubmit function!
+        ERR:${error}`)
+      }
+    }
+
     return (
         <div> 
           
@@ -28,7 +70,7 @@ const Contact = () => {
                 <div className="flex items-center justify-center">
                   <div className="px-2 md:px-12">
                     <p className=" text-center text-2xl font-bold text-gray-900 md:text-4xl dark:text-white">Get <span className='text-[#407BFF]'>in touch.</span></p>
-                    <form action="" className="mt-8 space-y-4">
+                    <form  className="mt-8 space-y-4">
                       <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
                         <div className="grid w-full  items-center gap-1.5">
                           <label
@@ -42,6 +84,7 @@ const Contact = () => {
                             type="text"
                             id="first_name"
                             placeholder="First Name"
+                            {...register("firstName", { required: true })}
                           />
                         </div>
                         <div className="grid w-full  items-center gap-1.5">
@@ -56,6 +99,8 @@ const Contact = () => {
                             type="text"
                             id="last_name"
                             placeholder="Last Name"
+                            {...register("lastName", { required: true })}
+
                           />
                         </div>
                       </div>
@@ -71,6 +116,8 @@ const Contact = () => {
                           type="text"
                           id="email"
                           placeholder="Email"
+                          {...register("email", { required: true })}
+
                         />
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
@@ -85,6 +132,8 @@ const Contact = () => {
                           type="tel"
                           id="phone_number"
                           placeholder="Phone number"
+                          {...register("phoneNumber", { required: true })}
+
                         />
                       </div>
                       <div className="grid w-full  items-center gap-1.5">
@@ -99,10 +148,13 @@ const Contact = () => {
                           id="message"
                           placeholder="Leave us a message"
                           cols={3}
+                          {...register("message", { required: true })}
+
                         />
                       </div>
                       <button
                         type="button"
+                        onClick={handleSubmit(onSubmit)}
                         className="w-full rounded-md  bg-[#407BFF] hover:bg-[#6495fe] px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                       >
                         Send Message
