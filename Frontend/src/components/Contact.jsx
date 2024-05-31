@@ -64,7 +64,7 @@ const Contact = () => {
                 neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
               </p>
             </div>
-            <div className="mx-auto max-w-7xl py-12 md:py-2">
+            <div className="mx-auto max-w-7xl py-12 md:py-10">
               <div className="grid items-center justify-items-center gap-x-4 gap-y-10">
                 {/* contact from */}
                 <div className="flex items-center justify-center">
