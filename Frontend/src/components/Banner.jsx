@@ -1,5 +1,6 @@
 import React from "react";
 import bannerImg from '/Banner3.png'
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -29,7 +30,10 @@ const Banner = () => {
             <input type="text" className="grow " placeholder="Email" />
           </label>
           </div>
+          <Link to="/course">
           <button className="btn bg-[#407BFF] text-white mt-6 hover:bg-[#6495fe]">Explore More</button>
+
+          </Link>
           </div>
         <div className="w-full md:w-1/2 order-1">
             <img  src={bannerImg} className="md:mx-10  w-92 h-92" alt="Banner_of_BookStore" />
