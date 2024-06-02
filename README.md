@@ -14,8 +14,8 @@ BookStore is a comprehensive online platform for browsing, purchasing, and revie
 - **Book Reviews:** Read and write reviews for books.
 
 
- ## Demo Pic
- ![Image](https://raw.githubusercontent.com/debapriyo007/BookStore/main/Frontend/public/Demo%20Image/BookStore_V0.1.png)
+ ## Demo PictureV0.2
+ ![Image](https://raw.githubusercontent.com/debapriyo007/BookStore/main/Frontend/public/Demo%20Image/BookStore_V0.2.png)
 
 # Requirements:
  - Daisy UI : https://daisyui.com/
