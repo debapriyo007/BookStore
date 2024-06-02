@@ -38,7 +38,7 @@ const FreeBoook = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -47,7 +47,7 @@ const FreeBoook = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -64,18 +64,14 @@ const FreeBoook = () => {
   // console.log(freeBooks);
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 mt-20">
         <div className="space-y-4">
           <h1 className="text-4xl font-bold text-center ">
             Offer <span className="text-[#407BFF]">Free Books .</span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-            quis est veniam temporibus molestias ratione nihil debitis
-            reprehenderit, aspernatur ut? Obcaecati? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Tenetur non fugiat ducimus distinctio,
-            commodi blanditiis quibusdam. Eaque enim non placeat illo.
-          </p>
+          <p className="mt-8 text-lg text-gray-700 text-center dark:text-white">
+              Hurry Up let's get the books!!
+            </p>
         </div>
 
         <div>
