@@ -56,7 +56,7 @@ const Contact = () => {
                   Share your thoughts
                 </p>
               </div> */}
-              <p className="text-center text-3xl font-bold text-gray-900 md:text-4xl md:leading-5 dark:text-white">
+              <p className="text-center text-3xl font-bold mt-16 md:mt-0 text-gray-900 md:text-4xl md:leading-5 dark:text-white">
                 Love to hear <span className='text-[#407BFF]'>from you.</span>
               </p>
               <p className="mx-auto max-w-4xl text-center text-base text-gray-600 md:text-md dark:text-gray-300">
