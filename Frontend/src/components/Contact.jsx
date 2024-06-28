@@ -57,17 +57,16 @@ const Contact = () => {
                 </p>
               </div> */}
               <p className="text-center text-3xl font-bold mt-16 md:mt-0 text-gray-900 md:text-4xl md:leading-5 dark:text-white">
-                Love to hear <span className='text-[#407BFF]'>from you.</span>
+                Contact page <span className='text-[#407BFF]'> updated soon...</span>
               </p>
               <p className="mx-auto max-w-4xl text-center text-base text-gray-600 md:text-md dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis voluptates
-                neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
+               
               </p>
             </div>
             <div className="mx-auto max-w-7xl py-12 md:py-7">
               <div className="grid items-center justify-items-center gap-x-4 gap-y-10">
                 {/* contact from */}
-                <div className="flex items-center justify-center">
+                {/* <div className="flex items-center justify-center">
                   <div className="px-2 md:px-12">
                     <p className=" text-center text-2xl font-bold text-gray-900 md:text-4xl dark:text-white">Get <span className='text-[#407BFF]'>in touch.</span></p>
                     <form  className="mt-8 space-y-4">
@@ -161,7 +160,7 @@ const Contact = () => {
                       </button>
                     </form>
                   </div>
-                </div>
+                </div> */}
                
               </div>
             </div>
