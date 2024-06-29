@@ -69,7 +69,7 @@ const FreeBoook = () => {
           <h1 className="text-4xl font-bold text-center ">
             Offer <span className="text-[#407BFF]">Free Books .</span>
           </h1>
-          <p className="mt-8 text-lg text-gray-700 text-center dark:text-white">
+          <p className="mt-8 md:text-lg text-md text-gray-700 text-center dark:text-white">
               Hurry Up let's get the books!!
             </p>
         </div>
