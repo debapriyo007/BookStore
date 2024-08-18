@@ -62,21 +62,25 @@ const Banner = () => {
             <form action="" className="mt-8 flex items-start space-x-2">
               <div>
                 <input
-                  className="flex w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/30 dark:placeholder-white dark:text-white dark:bg-slate-800 dark:focus:ring-white/30 dark:disabled:opacity-50 dark:disabled:cursor-not-allowed"
+                  className="flex w-full rounded-md border border-black/30 bg-transparent px-3 py-2 text-sm placeholder:text-gray-600 focus:outline-none focus:ring-1 focus:ring-black/30 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white/30 dark:placeholder-white dark:text-white dark:bg-slate-800 dark:focus:ring-white/30 dark:disabled:opacity-50 dark:disabled:cursor-not-allowed
+                  placeholder:font-thin"
                   type="email"
                   placeholder="Enter your email"
                   id="email"
                 ></input>
-                <p className="mt-2 text-sm text-gray-500">We care about your privacy</p>
+                <p className="mt-2 text-[12px] text-gray-500">We care about your privacy</p>
               </div>
               <div>
-                <button
-                  type="button"
-                  className="rounded-md bg-black px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black
-                  dark:bg-white dark:text-black"
-                >
-                  Subscribe
-                </button>
+              <Link to= "/signup">
+              <button
+                
+                type="button"
+                className="rounded-md bg-black px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black
+                dark:bg-white dark:text-black"
+              >
+                Subscribe
+              </button>
+              </Link>
               </div>
             </form>
           </div>

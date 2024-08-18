@@ -40,7 +40,7 @@ const Cards = ({ item }) => {
             <h1 className="inline-flex items-center text-lg font-semibold">
               {item.name} &nbsp; <FiArrowUpRight className="h-4 w-4" />
             </h1>
-            <p className="mt-3 text-sm text-gray-600">
+            <p className="mt-3 text-sm text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Excepturi, debitis?
             </p>
@@ -49,7 +49,7 @@ const Cards = ({ item }) => {
             </div>
             <button
               type="button"
-              className="mt-4 w-full rounded-sm bg-black px-2 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              className="mt-4 w-full rounded-md bg-[#407BFF] px-2 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#4d80f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
               Purchase Now
             </button>
