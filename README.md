@@ -15,7 +15,7 @@ BookStore is a comprehensive online platform for browsing, purchasing, and revie
 
 
  ## Demo PictureV0.2
- ![Image](https://raw.githubusercontent.com/debapriyo007/BookStore/main/Frontend/public/Demo%20Image/Demo2.0.png)
+ ![Image](https://raw.githubusercontent.com/debapriyo007/BookStore/main/Frontend/public/Demo%20Image/Demo_latest.png)
 
 # Requirements:
  - Daisy UI : https://daisyui.com/
